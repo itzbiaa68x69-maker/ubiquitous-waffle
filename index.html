@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff1eb, #ace0f9);
+        }
+
+        /* HEADER */
+        header {
+            background: #d83232f0;
+            padding: 15px 30px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            color: #ff4d4d93;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            color: #ff4d4d93;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #ff4d4d93;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:500px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<header>
+    <h1>Foodie Hub</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Delicious Fast Food</h2>
+    <p>Fresh • Tasty • Made with Love</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="pizza.jpg">
+        <div class="card-content">
+            <h3>Pizza</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="cutlet.jpg">
+        <div class="card-content">
+            <h3>cutlet</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="burger zinger.jpg">
+        <div class="card-content">
+            <h3>zinger burger</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="zinger roll.jpg">
+        <div class="card-content">
+            <h3>zinger Roll</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="rolls.jpg">
+        <div class="card-content">
+            <h3>Roll</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="samoooosa.jpg">
+        <div class="card-content">
+            <h3>Samosa</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="fries.jpg">
+        <div class="card-content">
+            <h3>Fries</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="cakee.jpg">
+        <div class="card-content">
+            <h3>cake</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="coldrink.jpg">
+        <div class="card-content">
+            <h3>Cold Drink</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="banana shake.jpg">
+        <div class="card-content">
+            <h3>Banana Shake</h3>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="shake oreo.jpg">
+        <div class="card-content">
+            <h3>Oreo Shake</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="chowmine.jpg">
+        <div class="card-content">
+            <h3>Chowmine</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="cheese bballs.jpg">
+        <div class="card-content">
+            <h3>cheese balls</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="momos.jpg">
+        <div class="card-content">
+            <h3>momos</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="sandwichhh.jpg">
+        <div class="card-content">
+            <h3>sandwich</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="maggii.jpg">
+        <div class="card-content">
+            <h3>maggi</h3>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Contact us on Instagram: <strong><a href="https://www.instagram.com/foodiehub.pk">Foodie Hub</a></strong></p>
+    <p>© 2024 Foodie Hub. All rights reserved.</p>
+</footer>
+
+</html>
